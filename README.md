@@ -184,6 +184,114 @@ pip install -r requirements.txt
 
 ---
 
+## ✅ Testing the API
+
+You can test the Crop Recommendation API using two methods:
+
+### 🧪 1. Manual Testing (Using `curl` or Postman)
+
+#### 🔹 Test: GET `/` (Health Check)
+
+```bash
+curl http://localhost:5000/
+```
+
+Expected Output:
+
+```json
+{ "message": "Crop Recommendation API is running." }
+```
+
+#### 🔹 Test: POST `/predict`
+
+```bash
+curl -X POST http://localhost:5000/predict \
+-H "Content-Type: application/json" \
+-d '{
+  "N": 90,
+  "P": 42,
+  "K": 43,
+  "temperature": 21.5,
+  "humidity": 80,
+  "ph": 6.5,
+  "rainfall": 120
+}'
+```
+
+Expected Output:
+
+```json
+{ "recommended_crop": "rice" }
+```
+
+✅ You can also use Postman or Thunder Client (VS Code extension) for sending POST requests.
+
+### 🧪 2. Automated Testing Using Python
+
+Create a file named `test.py` inside your project directory:
+
+```python
+import requests
+
+API_URL = "http://localhost:5000/predict"
+
+sample_inputs = [
+    {
+        "N": 90,
+        "P": 42,
+        "K": 43,
+        "temperature": 21.5,
+        "humidity": 80,
+        "ph": 6.5,
+        "rainfall": 120
+    },
+    {
+        "N": 45,
+        "P": 60,
+        "K": 40,
+        "temperature": 26,
+        "humidity": 65,
+        "ph": 6.0,
+        "rainfall": 180
+    }
+]
+
+for i, data in enumerate(sample_inputs):
+    response = requests.post(API_URL, json=data)
+    print(f"Test Case {i+1}:")
+    print(f"Input: {data}")
+    print(f"Response: {response.json()}")
+    print("-" * 50)
+```
+
+▶️ Run the test:
+
+```bash
+python test_api.py
+```
+
+Expected Output Example:
+
+```
+Test Case 1:
+Input: {N: 90, P: 42, K: 43, ...}
+Response: {"recommended_crop": "rice"}
+
+Test Case 2:
+Input: {...}
+Response: {"recommended_crop": "maize"}
+```
+
+### 🛠 Common Errors
+
+| Error | Solution |
+|-------|----------|
+| `ModuleNotFoundError: requests` | Run `pip install requests` |
+| `ConnectionRefusedError` | Make sure Flask server is running (`python app.py`) |
+| `500 Internal Server Error` | Check if model `.pkl` files exist and paths are correct |
+
+---
+
 ## 🌐 IoT & ESP32 Integration
 
 Use an ESP32 or other microcontroller to gather soil and climate data from sensors and send a POST request to the API. Tools like `WiFiClient`, `HTTPClient`, or `ESPAsyncWebServer` are recommended in Arduino IDE.
@@ -192,8 +300,8 @@ Use an ESP32 or other microcontroller to gather soil and climate data from senso
 
 ## ✍️ Author
 
-* 👤 Your Name : Isuru Marasinghe
-* 🎓 Smart Agriculture System
+* 👤 Your Name
+* 🎓 Final Year Engineering Project – Smart Agriculture System
 
 ---
 
