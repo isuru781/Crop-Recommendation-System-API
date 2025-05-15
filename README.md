@@ -43,13 +43,15 @@ This is a Flask-based REST API that predicts the most suitable crop to cultivate
 ## 📁 Project Structure
 
 ```
-crop_flask_api/
+Crop-Recommendation-System-API/
 ├── app.py                     # Flask app for crop prediction
 ├── model/
 │   ├── ensemble_model.pkl     # Trained model
 │   ├── scaler.pkl             # Scaler for input features
 │   └── label_encoder.pkl      # Label encoder for crop labels
 ├── requirements.txt
+├── test/
+│   ├── test.py               # test api
 └── README.md
 ```
 
