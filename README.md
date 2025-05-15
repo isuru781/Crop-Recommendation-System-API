@@ -295,11 +295,8 @@ Response: {"recommended_crop": "maize"}
 
 ## ✍️ Author
 
-* 👤 Your Name
-* 🎓 Final Year Engineering Project – Smart Agriculture System
+* 👤 Isuru Marasinghe
+* 🎓 Smart Agriculture System
 
 ---
 
-## 📄 License
-
-This project is open source under the [MIT License](https://opensource.org/licenses/MIT).
