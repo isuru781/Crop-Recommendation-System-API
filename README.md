@@ -292,11 +292,6 @@ Response: {"recommended_crop": "maize"}
 
 ---
 
-## 🌐 IoT & ESP32 Integration
-
-Use an ESP32 or other microcontroller to gather soil and climate data from sensors and send a POST request to the API. Tools like `WiFiClient`, `HTTPClient`, or `ESPAsyncWebServer` are recommended in Arduino IDE.
-
----
 
 ## ✍️ Author
 
