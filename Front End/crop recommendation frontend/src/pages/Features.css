@@ -1,0 +1,366 @@
+.features {
+  width: 100%;
+}
+
+.features-hero {
+  background: linear-gradient(135deg, #2d5016 0%, #3a6b1f 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.features-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.3rem;
+  color: #e8f5e9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features-content {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+/* Main Features */
+.main-features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature-block {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-header {
+  background: linear-gradient(135deg, #3a6b1f 0%, #5a9d2e 100%);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.feature-icon-big {
+  font-size: 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.feature-header h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.feature-details {
+  padding: 2rem;
+}
+
+.feature-details p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.feature-list li {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-left: 4px solid #5a9d2e;
+  border-radius: 4px;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* Parameters Showcase */
+.parameters-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.param-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.param-item:hover {
+  border-color: #5a9d2e;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(90, 157, 46, 0.2);
+}
+
+.param-badge {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #3a6b1f 0%, #5a9d2e 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.param-name {
+  color: #2d5016;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* IoT Grid */
+.iot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.iot-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.iot-card:hover {
+  border-color: #5a9d2e;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(90, 157, 46, 0.2);
+}
+
+.iot-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.iot-card h4 {
+  color: #2d5016;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.iot-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Crops Showcase */
+.crops-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.crop-tag {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  color: #2d5016;
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  font-weight: 600;
+  border: 2px solid #5a9d2e;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.crop-tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(90, 157, 46, 0.3);
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #2d5016;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  color: #2d5016;
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.benefit-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Use Cases */
+.use-cases-section {
+  margin-bottom: 2rem;
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.use-case-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.use-case-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(135deg, #3a6b1f 0%, #5a9d2e 100%);
+}
+
+.use-case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.use-case-number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e8f5e9;
+  opacity: 0.3;
+  margin-bottom: 1rem;
+}
+
+.use-case-card h3 {
+  color: #2d5016;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.use-case-card p {
+  color: #666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .features-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .feature-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .parameters-showcase {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .iot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .use-cases-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-hero h1 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .feature-icon-big {
+    width: 60px;
+    height: 60px;
+    font-size: 3rem;
+  }
+
+  .feature-details {
+    padding: 1.5rem;
+  }
+}
