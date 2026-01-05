@@ -106,9 +106,9 @@ const Predict = () => {
 
   const sampleData = [
     { name: 'Rice', data: { N: 90, P: 42, K: 43, temperature: 21.5, humidity: 80, ph: 6.5, rainfall: 120 } },
-    { name: 'Maize', data: { N: 45, P: 60, K: 40, temperature: 26, humidity: 65, ph: 6.0, rainfall: 180 } },
-    { name: 'Wheat', data: { N: 50, P: 30, K: 25, temperature: 18, humidity: 55, ph: 6.8, rainfall: 90 } },
-    { name: 'Cotton', data: { N: 120, P: 40, K: 50, temperature: 28, humidity: 70, ph: 7.0, rainfall: 100 } },
+    { name: 'PIGEONPEAS', data: { N: 45, P: 60, K: 40, temperature: 26, humidity: 65, ph: 6.0, rainfall: 180 } },
+    { name: 'MAIZE', data: { N: 50, P: 30, K: 25, temperature: 18, humidity: 55, ph: 6.8, rainfall: 90 } },
+    { name: 'COFFEE', data: { N: 120, P: 40, K: 50, temperature: 28, humidity: 70, ph: 7.0, rainfall: 100 } },
   ];
 
   const loadSampleData = (sample: typeof sampleData[0]) => {
