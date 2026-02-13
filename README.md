@@ -295,6 +295,54 @@ Response: {"recommended_crop": "maize"}
 ---
 
 
+## 🐳 Docker Deployment (Recommended)
+
+You can run the API instantly using Docker.
+
+### 🔗 Docker Hub Image
+
+👉 https://hub.docker.com/r/isuru225/crop-recommendation-system-api
+
+---
+
+### 📦 Pull Image
+
+```bash
+docker pull isuru225/crop-recommendation-system-api
+```
+
+### ▶️ Run Container
+
+```bash
+docker run -p 5000:5000 isuru225/crop-recommendation-system-api
+```
+
+---
+
+### 🌐 Access the API
+
+Once the container is running, the API will be available at:
+
+📍 [http://localhost:5000](http://localhost:5000)
+
+---
+
+### 🧪 Quick Test
+
+```bash
+curl http://localhost:5000/
+```
+
+### 🔍 Test Prediction
+
+```bash
+curl -X POST http://localhost:5000/predict \
+-H "Content-Type: application/json" \
+-d '{"N":90,"P":42,"K":43,"temperature":21.5,"humidity":80,"ph":6.5,"rainfall":120}'
+```
+
+---
+
 ## ✍️ Author
 
 * 👤 Isuru Marasinghe
